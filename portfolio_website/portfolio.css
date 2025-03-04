@@ -1,0 +1,130 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body {
+    background: black;
+    color: white;
+    background-image: url(images/blood\ moon.jpg);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkred;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background: lightgray;
+    border-radius: 5px;
+}
+
+#Home{
+    height: 600px;
+    font-size: 600%;
+}
+
+.projects-container {
+    display: flex;
+    gap: 10px; /* Adds spacing between images */
+    justify-content: space-evenly; /* Centers the images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+#projects {
+    width: 30vw; /* Adjust size as needed */
+    height: auto;
+}
+
+#myself{
+    width: 30vw;
+    height: auto;
+}
+
+
+/* Main Grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Home Section */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* About Section */
+.about {
+    background: black;
+    padding: 20px;
+}
+
+/* Projects Section */
+.projects {
+    background: black;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background: darkred;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact button {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+}
