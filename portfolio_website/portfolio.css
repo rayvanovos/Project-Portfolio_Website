@@ -43,7 +43,7 @@ nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
+#headerbtn {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
@@ -51,55 +51,42 @@ nav ul li a {
     border-radius: 5px;
 }
 
-#Home{
-    height: 600px;
-    font-size: 600%;
-}
-
-.projects-container {
-    display: flex;
-    gap: 10px; /* Adds spacing between images */
-    justify-content: space-evenly; /* Centers the images */
-    flex-wrap: wrap; /* Ensures responsiveness */
-}
-
-#projects {
-    width: 30vw; /* Adjust size as needed */
-    height: auto;
-}
-
-#myself{
-    width: 30vw;
-    height: auto;
-}
-
-
-/* Main Grid */
+/* Sections */
 main {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
     text-align: center;
 }
 
 /* Home Section */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+#home {
+    height: 600px;
+    font-size: 600%;
 }
 
-/* About Section */
-.about {
+/* About Me */
+#about-me {
     background: black;
     padding: 20px;
 }
 
-/* Projects Section */
-.projects {
+#myself {
+    width: 30vw;
+    height: auto;
+}
+
+/* Projects */
+#projects {
     background: black;
     padding: 20px;
+}
+
+.project-img {
+    width: 30vw;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
 }
 
 /* Footer */
@@ -111,12 +98,7 @@ footer {
     align-items: center;
 }
 
-.contact {
-    display: flex;
-    align-items: center;
-}
-
-.contact button {
+footer button {
     background: white;
     color: black;
     padding: 10px;
@@ -124,8 +106,7 @@ footer {
     margin-right: 10px;
 }
 
-.contact img {
+footer img {
     width: 30px;
     height: 30px;
 }
-
