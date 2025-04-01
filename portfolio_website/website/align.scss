@@ -1,0 +1,22 @@
+@mixin footer {
+    background: darkred;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin footerbtn{
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@mixin footerimg {
+    width: 30px;
+    height: 30px;
+}

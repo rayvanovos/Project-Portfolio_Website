@@ -1,0 +1,146 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body {
+  background: black;
+  color: white;
+  background-image: url(images/blood\ moon.jpg);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: darkred;
+  padding: 20px;
+  flex-wrap: wrap; /* Allows wrapping */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+#headerbtn {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  background: lightgray;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sections */
+main {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Full width */
+}
+
+/* Home Section */
+#home {
+  height: 400px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Me */
+#about-me, #projects {
+  background: black;
+  padding: 20px;
+}
+
+#myself, .project-img {
+  width: 100%;
+  max-width: 300px; /* Prevents large images */
+  height: auto;
+  display: block;
+  margin: 10px auto; /* Centers images */
+}
+
+/* Footer */
+footer {
+  background: darkred;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer button {
+  background: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Design */
+/* Tablet */
+@media only screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 500px) {
+  #home {
+    font-size: 2rem;
+  }
+  main {
+    width: 100%;
+    padding: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+}/*# sourceMappingURL=main.css.map */
